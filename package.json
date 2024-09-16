@@ -8,12 +8,6 @@
     "lint": "vue-cli-service lint",
     "prepare":"husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test",
-      "pre-push": "npm test"
-    }
-  },
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
