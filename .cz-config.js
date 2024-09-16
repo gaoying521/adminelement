@@ -16,19 +16,23 @@ module.exports = {
     { value: 'build', name: '构建系统或外部依赖变更' }
   ],
   // 消息的范围
-  scopes: [{ name: '项目名' }],
+  //scopes: [{ name: '项目名' }],
   // 是否允许范围为空
   allowEmptyScopes: false,
   // 是否允许自定义范围
   allowCustomScopes: true,
+
   // 提交的文本输入设置
   messages: {
-    type: '请选择要进行的更改类型:',
-    customScope: '请输入修改范围(例如组件名):',
-    subject: '简述更改(必填):',
-    body: '详细描述更改(可选).\n',
-    footer: '关闭的问题(可选).\n',
-    confirmCommit: '确认以上信息正确无误?'
+    type: '选择一种你的提交类型:',
+    scope: '选择修改涉及范围 (可选):',
+    // used if allowCustomScopes is true
+    customScope: '请输入本次改动的范围（如：功能、模块等）:',
+    subject: '简短说明:\n',
+    body: '详细说明，使用"|"分隔开可以换行(可选)：\n',
+    breaking: '非兼容性，破坏性变化说明 (可选):\n',
+    footer: '关联关闭的issue，例如：#31, #34(可选):\n',
+    confirmCommit: '确定提交说明?'
   },
   // 是否在提交时检查有效性
   subjectLimit: 100,
