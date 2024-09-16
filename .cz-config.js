@@ -42,9 +42,9 @@ module.exports = {
     footer: '关联关闭的issue，例如：#31, #34(可选):\n',
     confirmCommit: '确定提交说明?'
   },
-
+  skipQuestions: ['body', 'footer', 'breaking'],
   allowCustomScopes: true,
-  allowBreakingChanges: ['feat', 'fix'], // 仅在feat、fix时填写破坏性更改
+  //allowBreakingChanges: ['feat', 'fix'], // 仅在feat、fix时填写破坏性更改
   subjectLimit: 100, // limit subject length
   breaklineChar: '|' // 设置body和footer中的换行符
 }
