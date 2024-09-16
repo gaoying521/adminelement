@@ -1,7 +1,7 @@
 module.exports = {
   // 使用的提交规范类型
   types: [
-    { value: 'feat', name: '新功能' },
+    { value: 'feat', name: ' feat:      新功能' },
     { value: 'fix', name: '修复' },
     { value: 'docs', name: '文档变更' },
     { value: 'style', name: '代码格式(不影响代码运行的变动)' },
