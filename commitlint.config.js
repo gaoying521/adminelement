@@ -5,27 +5,25 @@ module.exports = {
       2,
       'always',
       [
-        'WIP', // 开发中
-        'feat', // 新特性
-        'improvement', // 加强现有特性
-        'fix', // 修补bug
-        'refactor', // 重构
-        'docs', // 文档
-        'test', // 单元测试
-        'config', // 配置文件
-        'style', // 格式需改
-        'perf', // 性能提升
-        'ci', // ci
-        'revert', // 版本回退
-        'chore' // 其他修改
+        'feat',
+        'fix',
+        'docs',
+        'perf',
+        'revert',
+        'ci',
+        'test',
+        'refactor',
+        'build',
+        'style',
+        'chore'
       ]
     ],
-    'type-empty': [2, 'never'], // type不能为空
-    'type-case': [0, 'always', 'lower-case'], // type不限制大小写
-    'subject-empty': [2, 'never'], // subject（简短得描述）不能为空
-    'subject-max-length': [1, 'always', 50], // subject最大长度，超出只会警告，不阻止提交
-    'body-leading-blank': [1, 'always'],
-    'footer-leading-blank': [1, 'always'],
-    'header-max-length': [2, 'always', 72]
+    'type-case': [0], //type 的输入格式,默认为小写‘lower-case’
+    'type-empty': [0], //type 是否可为空
+    'scope-empty': [0], //scope 是否为空
+    'scope-case': [0], //scope 的格式,默认为小写‘lower-case’
+    'subject-full-stop': [0, 'never'], //subject 结尾符,默认为.
+    'subject-case': [0, 'never'], //subject 的格式，默认其中之一：['sentence-case', 'start-case', 'pascal-case', 'upper-case']
+    'header-max-length': [0, 'always', 72] //header 最大长度，默认为72字符
   }
 }
