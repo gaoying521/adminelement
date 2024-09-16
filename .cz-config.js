@@ -28,7 +28,7 @@ module.exports = {
     scope: '选择修改涉及范围 (可选):',
     // used if allowCustomScopes is true
     customScope: '请输入本次改动的范围（如：功能、模块等）:',
-    subject: '简短说明:\n',
+    subject: '请描述修改简短说明:\n',
     body: '详细说明，使用"|"分隔开可以换行(可选)：\n',
     breaking: '非兼容性，破坏性变化说明 (可选):\n',
     footer: '关联关闭的issue，例如：#31, #34(可选):\n',
